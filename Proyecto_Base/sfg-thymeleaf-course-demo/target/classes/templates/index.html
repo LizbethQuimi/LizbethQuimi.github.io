@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Robótica</title>
+    
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <style>
+        .jumbotron {
+            background: url('https://futuroelectrico.com/wp-content/uploads/2022/06/ventajas-y-desventajas-de-la-robotica.jpg') no-repeat center center;
+            height: 350px;
+            color: rgb(255, 255, 255);
+            text-shadow: #444 0 1px 1px;
+        }
+
+        body {
+            color: #2b3636;
+            font-family: "Proxima";
+        }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .view-directory .course-listing {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .course-listing {
+            background-color: rgb(255, 255, 255);
+            border: 1px solid #f1f3f0;
+            border-radius: 9px;
+            box-shadow: 0 1px #f1f3f0;
+            cursor: pointer;
+            height: 250px;
+            margin-bottom: 50px;
+            padding: 0;
+            transition: transform 0.2s;
+        }
+
+        .course-listing:hover {
+            transform: scale(1.05);
+        }
+
+        .course-listing .course-box-image-container {
+            max-height: 140px;
+            overflow: hidden;
+        }
+
+        .course-listing .course-box-image-container .course-box-image {
+            border-bottom: 1px solid #ededed;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        .course-listing .course-listing-title {
+            color: rgb(64, 0, 128);
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 25px;
+            max-height: 70px;
+            overflow: hidden;
+            padding: 16px 16px 4px;
+        }
+
+        .course-listing .course-listing-subtitle {
+            color: rgb(0, 0, 0);
+            font-size: 14px;
+            font-weight: 200;
+            max-height: 65px;
+            overflow: hidden;
+            padding: 5px 16px;
+        }
+
+        .course-listing .course-listing-extra-info .course-price {
+            color: rgb(64, 0, 128) !important;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .course-listing .course-listing-extra-info .course-author-name {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 30px;
+            max-height: 30px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Curso de Robótica</h1>
+            <p class="lead">Cursos Online de Robótica</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Curso de Robótica</h1>
+            </div>
+        </div>
+    
+        <div class="row course-list list">
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS0tlvohb_s0G0-p26_Wd9To6tY7ASI7Y8yg&s" alt="Introducción a la Robótica">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/introduction-to-robotics">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Introducción a la Robótica
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Conceptos Básicos de Robótica
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                GRATIS
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlXXco26CzB9eSNkH-Y3TOQoJgHnWgdQWC4F0kXDf1jYRd3e8vEflSQtJD9yhUgoEUrPs&usqp=CAU" alt="Robótica Fundamental">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/robotics-core">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Robótica Fundamental
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Fundamentos de la Robótica
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                $85
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://d7lju56vlbdri.cloudfront.net/var/ezwebin_site/storage/images/noticias/los-diez-grandes-retos-de-la-robotica/6113764-6-esl-MX/Los-diez-grandes-retos-de-la-robotica.jpg" alt="Robótica Avanzada">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/robotics-core-advanced">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Robótica Avanzada
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Temas Avanzados de Robótica
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                $99
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="row">
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSO3hlB4XGAoZCEp74T_G2HKl9ZNVJcWAzLw&s" alt="Robótica Dev Ops">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/robotics-dev-ops">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Robótica Dev Ops
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Dev Ops
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                $355
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://d29jy8ovkd5kcx.cloudfront.net/wp-content/uploads/2022/10/13210909/Robot-con-inteligencia-artificial-Agustin-Jamele.jpg">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/artificial-intelligence">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Inteligencia Artificial
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Fundamentos de IA
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                $199
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="course-listing">
+                    <div class="course-box-image-container">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDhtdKU3oqG6YM20QMnELHSsX5qujkfqP0m1fr9We4Ll6kquwQRmKo9_LL8v82iz8FHqo&usqp=CAU">
+                    </div>
+                    <div class="row">
+                        <a href="/courses/robot-control">
+                            <div class="col-lg-12">
+                                <div class="course-listing-title">
+                                    Control de Robots
+                                </div>
+                                <div class="course-listing-subtitle">
+                                    Fundamentos del Control de Robots
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="row course-listing-extra-info col-xs-12">
+                        <div class="col-xs-8">
+                            <div class="small course-author-name">
+                                Lizbeth Quimi
+                            </div>
+                        </div>
+                        <div class="col-xs-4">
+                            <div class="small course-price">
+                                $250
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</body>
+</html>

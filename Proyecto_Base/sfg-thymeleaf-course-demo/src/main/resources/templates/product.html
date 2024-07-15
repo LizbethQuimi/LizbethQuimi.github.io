@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de Robótica</title>
+
+    <link href="https://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+
+    <style>
+        .jumbotron {
+            background: url('https://futuroelectrico.com/wp-content/uploads/2022/06/ventajas-y-desventajas-de-la-robotica.jpg') no-repeat center center;
+            height: 350px;
+            color: white;
+            text-shadow: #444 0 1px 1px;
+        }
+
+        body {
+            color: #333;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.42857;
+        }
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+
+        *::before, *::after {
+            box-sizing: border-box;
+        }
+
+        .view-directory .course-listing {
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+
+        .course-listing {
+            background-color: #f7f7f7;
+            border: 1px solid #f1f3f0;
+            border-radius: 9px;
+            box-shadow: 0 1px #f1f3f0;
+            cursor: pointer;
+            height: 390px;
+            margin-bottom: 50px;
+            padding: 0;
+        }
+
+        .course-listing .course-box-image-container {
+            max-height: 208px;
+            overflow: hidden;
+        }
+
+        .course-listing .course-box-image-container .course-box-image {
+            border-bottom: 1px solid #ededed;
+            border-top-left-radius: 9px;
+            border-top-right-radius: 9px;
+            display: block;
+            margin: auto;
+            width: 100%;
+        }
+
+        .course-listing .course-listing-title {
+            color: #6cb44a;
+            font-size: 18px;
+            font-weight: bold;
+            line-height: 25px;
+            max-height: 70px;
+            overflow: hidden;
+            padding: 16px 16px 4px;
+        }
+
+        .course-listing .course-listing-subtitle {
+            color: #586f6f;
+            font-size: 14px;
+            font-weight: 200;
+            max-height: 65px;
+            overflow: hidden;
+            padding: 5px 16px;
+        }
+
+        .course-listing .course-listing-extra-info .course-price {
+            color: #6eae50 !important;
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 34px;
+            padding-right: 10px;
+            text-align: right;
+        }
+
+        .course-listing .course-listing-extra-info .course-author-name {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 30px;
+            max-height: 30px;
+            overflow: hidden;
+            padding-left: 5px;
+        }
+
+        .course-listing .course-listing-extra-info .course-bundle {
+            font-size: 15px;
+            font-weight: 200;
+            line-height: 30px;
+        }
+
+        /* Estilos para las estrellas */
+        .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            text-align: center;
+            position: relative;
+            font-size: 36px; /* Tamaño de las estrellas */
+            margin-top: 20px;
+        }
+        .rating > span {
+            display: inline-block;
+            position: relative;
+            width: 1.1em;
+            cursor: pointer;
+            color: #ccc; /* Color de las estrellas vacías */
+        }
+        .rating > span:hover:before,
+        .rating > span:hover ~ span:before {
+            content: "\2605";
+            position: absolute;
+            color: gold; /* Color de las estrellas llenas */
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="jumbotron">
+    <div class="container">
+        <h1>Curso de Robótica</h1>
+        <p class="lead">Cursos Online de Robótica</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div>
+                <h2>Curso de Robótica - Introducción</h2>
+                <p>
+                    Aprende los fundamentos de la robótica, desde conceptos básicos hasta aplicaciones prácticas en diversos campos como la automatización industrial y la inteligencia artificial.
+                </p>
+                <p>
+                    Beneficios de aprender robótica: Desarrollo de habilidades en programación de robots, comprensión de sistemas de control, y preparación para carreras en tecnología avanzada.
+                </p>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div>
+                <h2>¿Por qué aprender robótica?</h2>
+                <p>
+                    La robótica es crucial en el mundo moderno por su impacto en la automatización, la medicina, la exploración espacial y más. Aprender robótica te prepara para entender y contribuir a estas áreas emergentes.
+                </p>
+                <p>
+                    Beneficios adicionales incluyen el desarrollo de habilidades en programación avanzada, comprensión de sistemas complejos y la capacidad de innovar en tecnologías futuras.
+                </p>
+            </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div>
+                <h2>Calificación del Curso</h2>
+                <div class="rating">
+                    <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span> <!-- Cinco estrellas vacías por defecto -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-offset-6 col-md-4">
+            <button class="btn btn-success">Inscríbete Ahora</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

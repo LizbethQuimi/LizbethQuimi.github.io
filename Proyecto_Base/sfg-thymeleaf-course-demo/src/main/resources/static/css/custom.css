@@ -1,0 +1,72 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: #f4f4f4;
+}
+
+.navbar {
+	background-color: #4CAF50;
+	padding: 15px;
+	text-align: center;
+}
+
+.navbar a {
+	color: white;
+	text-decoration: none;
+	margin: 0 15px;
+	font-size: 1.2em;
+}
+
+.header {
+	text-align: center;
+	padding: 50px 20px;
+	background-color: #333;
+	color: white;
+}
+
+.header h1 {
+	font-size: 3em;
+}
+
+.header p {
+	font-size: 1.2em;
+}
+
+.destinos-section {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 20px;
+}
+
+.destino-card {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+	margin: 15px;
+	width: 300px;
+	text-align: center;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: transform 0.2s;
+}
+
+.destino-card:hover {
+	transform: scale(1.05);
+}
+
+.destino-card img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+}
+
+.destino-card h3 {
+	font-size: 1.5em;
+	margin: 15px 0;
+}
+
+.destino-card p {
+	font-size: 1em;
+	padding: 0 10px 20px;
+	color: #666;
+}

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aerolíneas J-DKLI - Inicio</title>
+
+	<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet"
+		media="screen" />
+
+	<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
+
+	<link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		.navbar {
+			background-color: rgb(128, 0, 255);
+			padding: 15px;
+			text-align: center;
+		}
+
+		.navbar a {
+			color: white;
+			text-decoration: none;
+			margin: 0 15px;
+			font-size: 1.2em;
+		}
+
+		.header {
+			text-align: center;
+			padding: 50px 20px;
+			background-color: #333;
+			color: white;
+		}
+
+		.header h1 {
+			font-size: 3em;
+		}
+
+		.header p {
+			font-size: 1.2em;
+		}
+
+		.destinos-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		.destino-card {
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			margin: 15px;
+			width: 300px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+		}
+
+		.destino-card:hover {
+			transform: scale(1.05);
+		}
+
+		.destino-card img {
+			width: 100%;
+			border-radius: 10px 10px 0 0;
+		}
+
+		.destino-card h3 {
+			font-size: 1.5em;
+			margin: 15px 0;
+		}
+
+		.destino-card p {
+			font-size: 1em;
+			padding: 0 10px 20px;
+			color: #666;
+		}
+	</style>
+</head>
+
+<body>
+	</div>
+	<div class="header">
+		<h1>Destinos Populares</h1>
+		<p>Explora nuestros destinos más solicitados y disfruta de una experiencia inolvidable.</p>
+	</div>
+	<div class="destinos-section">
+		<div class="destino-card">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg/640px-La_Tour_Eiffel_vue_de_la_Tour_Saint-Jacques%2C_Paris_ao%C3%BBt_2014_%282%29.jpg" alt="París">
+			<h3>París</h3>
+			<p>La ciudad del amor te espera con sus icónicos monumentos y deliciosa gastronomía.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://www.civitatis.com/blog/wp-content/uploads/2022/11/calle-akihabara-tokio.jpg" alt="Tokio">
+			<h3>Tokio</h3>
+			<p>Descubre la mezcla perfecta de tradición y modernidad en la vibrante capital de Japón.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://media.iatiseguros.com/wp-content/uploads/2019/04/04011211/que-hacer-sidney-6.jpg" alt="Sídney">
+			<h3>Sídney</h3>
+			<p>Relájate en las playas soleadas y visita la icónica Ópera de Sídney.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://dam.ngenespanol.com/wp-content/uploads/2021/05/cuanto-cuesta-viajar-a-nueva-york-770x513.jpg" alt="Nueva York">
+			<h3>Nueva York</h3>
+			<p>La ciudad que nunca duerme te espera con sus luces brillantes y vida nocturna.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://historia.nationalgeographic.com.es/medio/2019/12/11/coliseo-roma_2924b6ae_1280x720.jpg" alt="Roma">
+			<h3>Roma</h3>
+			<p>Sumérgete en la historia antigua mientras exploras las maravillas de Roma.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://content.r9cdn.net/rimg/dimg/8a/d8/29dcb2f0-city-28501-17579c53c1d.jpg?width=1366&height=768&xhint=1560&yhint=1280&crop=true" alt="Londres">
+			<h3>Londres</h3>
+			<p>Disfruta de la rica historia y cultura de una de las ciudades más influyentes del mundo.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzEBkGm_1w3qZCYNN53TSqNIKeYjo_SCZYKA&s" alt="Argentina">
+			<h3>Argentina</h3>
+			<p>Quedate encantando con el obelisco que se encuentra a tu disposicion.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg/640px-Dubai_Skylines_at_night_%28Pexels_3787839%29.jpg" alt="Dubai">
+			<h3>Dubai</h3>
+			<p>Experimenta el lujo y la modernidad en una de las ciudades más espectaculares del mundo.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://www.cideu.org/wp-content/uploads/2019/12/barcelona1-1024x640.jpg" alt="Barcelona">
+			<h3>Barcelona</h3>
+			<p>Admira la arquitectura de Gaudí y relájate en las playas mediterráneas.</p>
+		</div>
+		<div class="destino-card">
+			<img src="https://www.hoteldelparquehistorico.com/wp-content/uploads/2021/11/malecon-2000.jpg" alt="Ecuador">
+			<h3>Ecuador</h3>
+			<p>Aprovecha la belleza del Malecon 2000 y fascinate con su gente hermosa.</p>
+		</div>
+
+	</div>
+</body>
+
+</html>

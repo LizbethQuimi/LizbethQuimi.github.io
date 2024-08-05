@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Aerolíneas J-DKLI - PAQUETES</title>
+
+	<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
+	<link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		.navbar {
+			background-color: rgb(64, 0, 128);
+			padding: 15px;
+			text-align: center;
+		}
+
+		.navbar a {
+			color: white;
+			text-decoration: none;
+			margin: 0 15px;
+			font-size: 1.2em;
+		}
+
+		.header {
+			text-align: center;
+			padding: 50px 20px;
+			background-color: #333;
+			color: white;
+		}
+
+		.header h1 {
+			font-size: 3em;
+		}
+
+		.header p {
+			font-size: 1.2em;
+		}
+
+		.paquetes-section {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 20px;
+		}
+
+		.paquete-card {
+			background-color: white;
+			border: 1px solid #ccc;
+			border-radius: 10px;
+			margin: 15px;
+			width: 300px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			transition: transform 0.2s;
+		}
+
+		.paquete-card:hover {
+			transform: scale(1.05);
+		}
+
+		.paquete-card img {
+			width: 100%;
+			border-radius: 10px 10px 0 0;
+		}
+
+		.paquete-card h3 {
+			font-size: 1.5em;
+			margin: 15px 0;
+		}
+
+		.paquete-card p {
+			font-size: 1em;
+			padding: 0 10px 20px;
+			color: #666;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="navbar">
+		<!-- Navbar content -->
+	</div>
+	<div class="header">
+		<h1>Paquetes de Viaje</h1>
+		<p>Explora nuestros paquetes de viaje y encuentra la mejor opción para tu próxima aventura.</p>
+	</div>
+	<div class="paquetes-section">
+		<div class="paquete-card">
+			<img src="https://humanidades.com/wp-content/uploads/2023/05/Europa1.jpg" alt="Paquete Europa">
+			<h3>Paquete Europa</h3>
+			<p>Descubre las maravillas de Europa con nuestro paquete todo incluido.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://humanidades.com/wp-content/uploads/2023/05/Asia-ciudad.jpg" alt="Paquete Asia">
+			<h3>Paquete Asia</h3>
+			<p>Explora la rica cultura y belleza de Asia con este paquete exclusivo.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://humanidades.com/wp-content/uploads/2023/05/America-del-sur-bolivia.jpg">
+			<h3>Paquete América del Sur</h3>
+			<p>Vive la aventura en América del Sur con nuestros tours y actividades.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://concepto.de/wp-content/uploads/2020/02/africa-madagascar-isla-baobabs-e1582040599880.jpg" alt="Paquete África">
+			<h3>Paquete África</h3>
+			<p>Descubre los paisajes y la fauna de África con nuestros safaris.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://humanidades.com/wp-content/uploads/2023/05/Oceania-sydney.jpg" alt="Paquete Oceanía">
+			<h3>Paquete Oceanía</h3>
+			<p>Relájate en las playas paradisíacas de Oceanía con este paquete exclusivo.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://static.barcelo.com/content/dam/bpt/posts/2022/10/mejor%20epoca%20para%20viajar%20al%20caribe.jpg" alt="Paquete Caribe">
+			<h3>Paquete Caribe</h3>
+			<p>Disfruta del sol y el mar en el Caribe con nuestro paquete todo incluido.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://humanidades.com/wp-content/uploads/2023/05/America-del-norte.jpg" alt="Paquete Norteamérica">
+			<h3>Paquete Norteamérica</h3>
+			<p>Explora las ciudades y parques nacionales de Norteamérica.</p>
+		</div>
+		<div class="paquete-card">
+			<img src="https://concepto.de/wp-content/uploads/2020/07/antartida-hielo-e1595901009604-800x400.jpg" alt="Paquete Antártida">
+			<h3>Paquete Antártida</h3>
+			<p>Vive la experiencia única de explorar la Antártida con nuestros cruceros.</p>
+		</div>
+	</div>
+</body>
+
+</html>

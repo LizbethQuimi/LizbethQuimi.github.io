@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viaja Con Nosotros</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		header {
+			background-color: #4A90E2;
+			padding: 20px;
+			color: white;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2.5em;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.section {
+			margin-bottom: 20px;
+		}
+
+		.section h2 {
+			font-size: 2em;
+			color: #4A90E2;
+			margin-bottom: 10px;
+		}
+
+		.section p {
+			font-size: 1.2em;
+			color: #666;
+			line-height: 1.6;
+		}
+
+		.tourist-spot,
+		.dish {
+			background-color: white;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			overflow: hidden;
+			display: flex;
+		}
+
+		.tourist-spot img,
+		.dish img {
+			width: 40%;
+			height: auto;
+		}
+
+		.info {
+			padding: 20px;
+			flex: 1;
+		}
+
+		.info h3 {
+			margin-top: 0;
+			color: #333;
+		}
+
+		.info p {
+			color: #666;
+		}
+
+		.accordion {
+			cursor: pointer;
+			background-color: #4A90E2;
+			color: white;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 1.2em;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #357ABD;
+		}
+
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			display: none;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Descubre Quito, Ecuador</h1>
+	</header>
+	<main>
+		<section class="section" id="description">
+			<h2>DESCRIPCION</h2>
+			<p>Quito, la capital de Ecuador, es una ciudad encantadora situada en la cordillera de los Andes. Con su
+				centro histórico bien conservado, declarado Patrimonio de la Humanidad por la UNESCO, y su impresionante
+				paisaje montañoso, Quito ofrece una mezcla única de historia, cultura y naturaleza.</p>
+		</section>
+
+		<section class="section" id="tourist-spots">
+			<h2>Lugares Turísticos</h2>
+			<button class="accordion">Mitad del Mundo</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://blog.howlanders.com/wp-content/uploads/2021/01/mitad-del-mundo-quito.jpg" alt="Mitad del Mundo">
+					<div class="info">
+						<h3>Mitad del Mundo</h3>
+						<p>El Monumento a la Mitad del Mundo marca el lugar donde se cree que pasa la línea ecuatorial.
+							Este icónico sitio turístico permite a los visitantes estar en los hemisferios norte y sur
+							al mismo tiempo. Además, el complejo cuenta con museos, tiendas de souvenirs y restaurantes.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Centro Histórico de Quito</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW4JtGRzCQqnGc9WNMZZr6ISNaXnTjYm7-2A&s" alt="Centro Histórico de Quito">
+					<div class="info">
+						<h3>Centro Histórico de Quito</h3>
+						<p>El Centro Histórico de Quito es uno de los mejor conservados y más extensos de América
+							Latina. Con sus calles empedradas, iglesias barrocas, y plazas coloniales, este área es un
+							viaje al pasado. Lugares destacados incluyen la Iglesia de la Compañía de Jesús y la Plaza
+							de la Independencia.</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Teleférico de Quito</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdL9TI7OWmJLmmxfBbghgRpFVpFzo9fTXv5g&s" alt="Teleférico de Quito">
+					<div class="info">
+						<h3>Teleférico de Quito</h3>
+						<p>El Teleférico de Quito es una de las atracciones más emocionantes de la ciudad, ofreciendo
+							vistas panorámicas espectaculares desde el volcán Pichincha. El teleférico asciende hasta
+							4,100 metros sobre el nivel del mar, proporcionando una vista impresionante de Quito y sus
+							alrededores.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="typical-dishes">
+			<h2>Platos Típicos</h2>
+			<button class="accordion">Ceviche</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLTdEPPKNLhuoeJ3gvMZRImeRjtS_jNvR7IQ&s" alt="Ceviche">
+					<div class="info">
+						<h3>Ceviche</h3>
+						<p>El Ceviche es un plato popular en la costa ecuatoriana, hecho con mariscos frescos marinados
+							en jugo de limón, cebolla, tomate y cilantro. Es refrescante y sabroso, ideal para disfrutar
+							en un día caluroso. Se suele acompañar con chifles (plátanos fritos) o maíz tostado.</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Encebollado</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://bagre.life/wp-content/uploads/2022/11/FB_IMG_1667571956116-Mejorado.jpg" alt="Locro de Papa">
+					<div class="info">
+						<h3>Encebollado</h3>
+						<p>El encebollado, cuyo significado genérico es comida aderezada con mucha cebolla y sazonada con especias, es además un plato típico de Ecuador originario de la región costa. Es considerado el plato insignia de la gastronomía ecuatoriana El encebollado era un plato muy consumido por los estibadores del puerto de Guayaquil, anteriormente conocido como picante de pescado</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Yapingacho</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYWUtwTyoyVcWLqiI-uGekVVe0yk-EUa8Wtg&s" alt="Empanadas de Viento">
+					<div class="info">
+						<h3>Yapingacho</h3>
+						<p>El yapingacho es un plato tradicional de Ecuador y básicamente consiste en una tortilla de puré con queso, lo que le hace valer para acompañante en las comidas, para desayunos o en si mismos como un plato completo sirviéndolo con un salchichas o chorizo y vegetales. Sigue esta receta fácil y rápida y aprende a cocinar el auténtico yapingacho ecuatoriano.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		for (var i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>

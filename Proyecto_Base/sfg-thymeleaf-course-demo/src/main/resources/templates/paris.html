@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<title>THE BEST OF PARIS</title>
+
+	<link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css" rel="stylesheet" media="screen" />
+	<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"></script>
+	<link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+
+	<!DOCTYPE html>
+	<html lang="es">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Descubre París</title>
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	    <style>
+	        body {
+	            font-family: 'Roboto', sans-serif;
+	            margin: 0;
+	            padding: 0;
+	            background-color: #f4f4f4;
+	        }
+	        header {
+	            background-color: #4A90E2;
+	            padding: 20px;
+	            color: white;
+	            text-align: center;
+	        }
+	        header h1 {
+	            margin: 0;
+	            font-size: 2.5em;
+	        }
+	        main {
+	            padding: 20px;
+	        }
+	        .section {
+	            margin-bottom: 20px;
+	        }
+	        .section h2 {
+	            font-size: 2em;
+	            color: #4A90E2;
+	            margin-bottom: 10px;
+	        }
+	        .section p {
+	            font-size: 1.2em;
+	            color: #666;
+	            line-height: 1.6;
+	        }
+	        .tourist-spot, .dish {
+	            background-color: white;
+	            border: 1px solid #ddd;
+	            border-radius: 8px;
+	            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	            margin-bottom: 20px;
+	            overflow: hidden;
+	            display: flex;
+	        }
+	        .tourist-spot img, .dish img {
+	            width: 40%;
+	            height: auto;
+	        }
+	        .info {
+	            padding: 20px;
+	            flex: 1;
+	        }
+	        .info h3 {
+	            margin-top: 0;
+	            color: #333;
+	        }
+	        .info p {
+	            color: #666;
+	        }
+	        .accordion {
+	            cursor: pointer;
+	            background-color: #4A90E2;
+	            color: white;
+	            padding: 10px;
+	            width: 100%;
+	            border: none;
+	            text-align: left;
+	            outline: none;
+	            font-size: 1.2em;
+	            transition: 0.4s;
+	        }
+	        .active, .accordion:hover {
+	            background-color: #357ABD;
+	        }
+	        .panel {
+	            padding: 0 18px;
+	            background-color: white;
+	            display: none;
+	            overflow: hidden;
+	        }
+	    </style>
+	</head>
+	<body>
+	    <header>
+	        <h1>Descubre París</h1>
+	    </header>
+	    <main>
+	        <section class="section" id="description">
+	            <h2>DESCRIPCION</h2>
+	            <p>París, la capital de Francia, es conocida como la "Ciudad del Amor" y la "Ciudad de la Luz". Es famosa por su cultura, arquitectura y gastronomía, siendo uno de los destinos turísticos más populares del mundo.</p>
+	        </section>
+
+	        <section class="section" id="tourist-spots">
+	            <h2>Lugares Turísticos</h2>
+	            <button class="accordion">Torre Eiffel</button>
+	            <div class="panel">
+	                <div class="tourist-spot">
+	                    <img src="https://viajes.nationalgeographic.com.es/medio/2024/02/14/torre-eiffel_6e9796fd_278483323_240214093442_1280x853.jpg" alt="Torre Eiffel">
+	                    <div class="info">
+	                        <h3>Torre Eiffel</h3>
+	                        <p>La Torre Eiffel es el símbolo más emblemático de París. Ofrece vistas panorámicas impresionantes de la ciudad desde sus diferentes niveles.nicialmente llamada Tour de 300 mètres («Torre de 300 metros») es una estructura de hierro pudelado diseñada inicialmente por los ingenieros civiles Maurice Koechlin y Émile Nouguier y construida, tras el rediseño estético de Stephen Sauvestre, por el ingeniero civil francés Gustave Eiffel y sus colaboradores para la Exposición Universal de 1889 en París </p>
+	                    </div>
+	                </div>
+	            </div>
+	            <button class="accordion">Museo del Louvre</button>
+	            <div class="panel">
+	                <div class="tourist-spot">
+	                    <img src="https://imagenes.muyinteresante.com/files/article_social_75/uploads/2023/11/13/655225c0bc534.jpeg" alt="Museo del Louvre">
+	                    <div class="info">
+	                        <h3>Museo del Louvre</h3>
+	                        <p>El Museo del Louvre es el museo de arte más grande del mundo y alberga la famosa pintura de la Mona Lisa, entre otras obras maestras. consagrado tanto a las bellas artes como a la arqueología y las artes decorativas anteriores al impresionismo. Está ubicado en París, la capital del país, en el antiguo palacio real del Louvre. Sus extensas colecciones son el resultado del coleccionismo desarrollado por la monarquía francesa a lo largo de varios siglos, al que se sumó el esfuerzo de varias personalidades de la Ilustración, la labor desamortizadora de la Revolución francesa, las victorias militares durante las guerras napoleónicas, y las campañas arqueológicas y compras impulsadas durante el siglo xix.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+
+	        <section class="section" id="typical-dishes">
+	            <h2>Platos Típicos</h2>
+	            <button class="accordion">Croissant</button>
+	            <div class="panel">
+	                <div class="dish">
+	                    <img src="https://imag.bonviveur.com/croissants.jpg" alt="Croissant">
+	                    <div class="info">
+	                        <h3>Croissant</h3>
+	                        <p>El croissant es un clásico desayuno francés, conocido por su textura hojaldrada y su sabor mantecoso. Perfecto para acompañar con café.Fue creada en París en el siglo xix donde los panaderos locales se inspiraron de la forma del kifli austriaco popularizado por el panadero vienés August Zang, pero usaron una masa hojaldrada fermentada típicamente francesa que se usa también para hacer otras preparaciones como la napolitana.</p>
+	                    </div>
+	                </div>
+	            </div>
+	            <button class="accordion">Boeuf Bourguignon</button>
+	            <div class="panel">
+	                <div class="dish">
+	                    <img src="https://food-images.files.bbci.co.uk/food/recipes/boeuf_bourguignon_25475_16x9.jpg" alt="Boeuf Bourguignon">
+	                    <div class="info">
+	                        <h3>Boeuf Bourguignon</h3>
+	                        <p>El Boeuf Bourguignon es un estofado de carne de res cocinado en vino tinto, típico de la región de Borgoña, servido con zanahorias, cebollas y champiñones.El plato consiste en un estofado de carne cocinado en vino tinto de Borgoña, y aromatizado con ajo, cebollas, zanahorias, sal y un bouquet garni. La cocción es larga y se realiza a fuego lento. El líquido concentrado resultante de la cocción se suele espesar ligeramente con un roux para darle la consistencia de una salsa. Se sirve con una guarnición de panceta, setas o champiñones, y cebollinos.</p>
+	                    </div>
+	                </div>
+	            </div>
+	        </section>
+	    </main>
+
+	    <script>
+	        var acc = document.getElementsByClassName("accordion");
+	        for (var i = 0; i < acc.length; i++) {
+	            acc[i].addEventListener("click", function() {
+	                this.classList.toggle("active");
+	                var panel = this.nextElementSibling;
+	                if (panel.style.display === "block") {
+	                    panel.style.display = "none";
+	                } else {
+	                    panel.style.display = "block";
+	                }
+	            });
+	        }
+	    </script>
+	</body>
+	</html>

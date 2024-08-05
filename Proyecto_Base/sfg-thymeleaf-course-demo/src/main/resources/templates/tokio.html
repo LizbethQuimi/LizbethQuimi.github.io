@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Viaja Con Nosotros</title>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	<link th:href="@{/css/custom.css}" rel="stylesheet" media="screen">
+	<style>
+		body {
+			font-family: 'Roboto', sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f4f4f4;
+		}
+
+		header {
+			background-color: #4A90E2;
+			padding: 20px;
+			color: white;
+			text-align: center;
+		}
+
+		header h1 {
+			margin: 0;
+			font-size: 2.5em;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		.section {
+			margin-bottom: 20px;
+		}
+
+		.section h2 {
+			font-size: 2em;
+			color: #4A90E2;
+			margin-bottom: 10px;
+		}
+
+		.section p {
+			font-size: 1.2em;
+			color: #666;
+			line-height: 1.6;
+		}
+
+		.tourist-spot,
+		.dish {
+			background-color: white;
+			border: 1px solid #ddd;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			margin-bottom: 20px;
+			overflow: hidden;
+			display: flex;
+		}
+
+		.tourist-spot img,
+		.dish img {
+			width: 40%;
+			height: auto;
+		}
+
+		.info {
+			padding: 20px;
+			flex: 1;
+		}
+
+		.info h3 {
+			margin-top: 0;
+			color: #333;
+		}
+
+		.info p {
+			color: #666;
+		}
+
+		.accordion {
+			cursor: pointer;
+			background-color: #4A90E2;
+			color: white;
+			padding: 10px;
+			width: 100%;
+			border: none;
+			text-align: left;
+			outline: none;
+			font-size: 1.2em;
+			transition: 0.4s;
+		}
+
+		.active,
+		.accordion:hover {
+			background-color: #357ABD;
+		}
+
+		.panel {
+			padding: 0 18px;
+			background-color: white;
+			display: none;
+			overflow: hidden;
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Descubre Tokio</h1>
+	</header>
+	<main>
+		<section class="section" id="description">
+			<h2>DESCRIPCION</h2>
+			<p>Tokio, la capital de Japón, es una metrópolis vibrante que combina tradición y modernidad. Con sus
+				templos históricos, rascacielos impresionantes y una cultura única, Tokio ofrece una experiencia
+				inolvidable a sus visitantes.</p>
+		</section>
+
+		<section class="section" id="tourist-spots">
+			<h2>Lugares Turísticos</h2>
+			<button class="accordion">Templo Senso-ji</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://www.viaje.jp/wp/wp-content/uploads/2020/02/41b5162997abe1a70e1b26a4d308f11d.jpg" alt="Templo Senso-ji">
+					<div class="info">
+						<h3>Templo Senso-ji</h3>
+						<p>El Templo Senso-ji es el templo más antiguo de Tokio, situado en el distrito de Asakusa.
+							Fundado en el año 645, este templo budista es conocido por su Puerta Kaminarimon y su calle
+							comercial Nakamise, donde los visitantes pueden comprar recuerdos y probar delicias locales.
+						</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Torre de Tokio</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://www.nippon.com/es/ncommon/contents/japan-glances/2148605/2148605.jpg" alt="Torre de Tokio">
+					<div class="info">
+						<h3>Torre de Tokio</h3>
+						<p>La Torre de Tokio es un símbolo icónico de la ciudad, inspirado en la Torre Eiffel de París.
+							Con una altura de 333 metros, ofrece vistas panorámicas de Tokio desde sus plataformas de
+							observación. También alberga museos, tiendas y restaurantes en su base.</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Shibuya Crossing</button>
+			<div class="panel">
+				<div class="tourist-spot">
+					<img src="https://upload.wikimedia.org/wikipedia/commons/d/d1/Shibuya_scramble_crossing_during_Halloween_2023%2C_actually_less_crowded_than_usual%2C_high_police_presence_2.jpg" alt="Shibuya Crossing">
+					<div class="info">
+						<h3>Shibuya Crossing</h3>
+						<p>El Cruce de Shibuya es uno de los cruces peatonales más concurridos del mundo. Situado frente
+							a la estación de Shibuya, este lugar es conocido por su caos organizado y sus enormes
+							pantallas publicitarias. Es un punto de referencia popular y un lugar ideal para
+							experimentar la energía de Tokio.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section" id="typical-dishes">
+			<h2>Platos Típicos</h2>
+			<button class="accordion">Sushi</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://tb-static.uber.com/prod/image-proc/processed_images/92f03a95d3580a252064c6e5ccef4d54/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg" alt="Sushi">
+					<div class="info">
+						<h3>Sushi</h3>
+						<p>El sushi es uno de los platos más emblemáticos de Japón, conocido mundialmente por su
+							simplicidad y elegancia. Consiste en arroz avinagrado acompañado de pescado crudo, mariscos,
+							o verduras, y se puede disfrutar en muchas formas, como nigiri, maki, y sashimi.</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Ramen</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://www.hola.com/horizon/landscape/2f899a0850e1-ramen-adobe-t.jpg" alt="Ramen">
+					<div class="info">
+						<h3>Ramen</h3>
+						<p>El ramen es una sopa de fideos japonesa que se sirve en un caldo rico y sabroso, con
+							ingredientes variados como cerdo chashu, huevo marinado, nori y cebolleta. Cada región de
+							Japón tiene su propio estilo de ramen, haciendo de este plato una experiencia culinaria
+							diversa y deliciosa.</p>
+					</div>
+				</div>
+			</div>
+			<button class="accordion">Tempura</button>
+			<div class="panel">
+				<div class="dish">
+					<img src="https://i0.wp.com/www.sushilab.cl/wp-content/uploads/2023/05/BLOG.jpg?fit=1920%2C1080&ssl=1" alt="Tempura">
+					<div class="info">
+						<h3>Tempura</h3>
+						<p>La tempura es un plato de mariscos y verduras rebozados y fritos. La masa ligera y crujiente,
+							junto con la frescura de los ingredientes, hacen de la tempura una opción popular tanto en
+							restaurantes como en puestos de comida callejera en Tokio.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<script>
+		var acc = document.getElementsByClassName("accordion");
+		for (var i = 0; i < acc.length; i++) {
+			acc[i].addEventListener("click", function () {
+				this.classList.toggle("active");
+				var panel = this.nextElementSibling;
+				if (panel.style.display === "block") {
+					panel.style.display = "none";
+				} else {
+					panel.style.display = "block";
+				}
+			});
+		}
+	</script>
+</body>
+
+</html>
